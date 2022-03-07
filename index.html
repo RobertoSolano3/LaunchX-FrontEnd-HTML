@@ -5,28 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="menu-container">
             <img src="./assets/logo.png" alt="Logo empresa">
             <div>
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Pasteles</a></li>
-                    <li><a href="">Adornos</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Ordena ahora</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Pasteles</a></li>
+                    <li><a href="#">Adornos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Ordena ahora</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
+        <h1 class="titulo">Pastelería Estrella</h1>
+        <br>
+        <div class="cakes-container">
+            <div class="cake-card">
+                <div class="info">
+                    <h2>Pastel de chocolate</h2>
+                    <p>Nuestro pastel tradicional de chocolate.</p>
+                    <h3>$250</h3>
+                    
+                </div>
+                <img src="./assets/pastel_chocolate.jpg" alt="Imagen de pastel de chocolate">
 
+            </div>
+            <div class="cake-card">
+                <div class="info">
+                    <h2>Pastel de vainilla</h2>
+                    <p>Nuestro pastel tradicional de vainilla.</p>
+                    <h3>$250</h3>
+                    
+                    
+                </div>
+                <img src="./assets/pastel_vainilla.jpg" alt="Imagen de pastel de vainilla">
+            </div>
+            <div class="cake-card">
+                <div class="info">
+                    <h2>Pastel de fresa</h2>
+                    <p>Nuestro pastel tradicional de fresa.</p>
+                    <h3>$250</h3>
+                    
+                    
+                </div>
+                <img src="./assets/pastel_fresa.jpg" alt="Imagen de pastel de fresa">
+            </div>
+            <div class="cake-card">
+                <div class="info">
+                    <h2>Adorno aniversario</h2>
+                    <p>Adorno para tu aniversario.</p>
+                    <h3>$50</h3>
+                    
+                </div>
+                <img src="./assets/aniversario.jpg" alt="Imagen de adorno para aniversario">
+
+            </div>
+            <div class="cake-card">
+                <div class="info">
+                    <h2>Adorno para graduación</h2>
+                    <p>Adorno para tu graduación.</p>
+                    <h3>$50</h3>
+                    
+                    
+                </div>
+                <img src="./assets/graduacion.jpg" alt="Imagen de adorno para graduación">
+            </div>
+            <div class="cake-card">
+                <div class="info">
+                    <h2>Adorno de cumpleaños</h2>
+                    <p>Adorno para tu cumpleaños.</p>
+                    <h3>$50</h3>
+                    
+                    
+                </div>
+                <img src="./assets/cumpleaños.png" alt="Imagen de adorno para cumpleaños">
+            </div>
+        </div>
+
+
+        <div class="form-container">
+            <h2>¡Haz tu pedido aquí!</h2>
+            <form action="">
+                <label for="GET-name">Nombre:</label>
+                <input id="GET-name" type="text" name="name">
+                <br>
+                <label for="GET-tel">Teléfono:</label>
+                <input id="GET-tel" type="tel" name="tel">
+                <br>
+                <label for="GET-email">Email:</label>
+                <input id="GET-email" type="email" name="email">
+                <br>
+                <label for="GET-info">Descripción:</label>
+                <input id="GET-info" type="text" name="info">
+                <br>
+                <br>
+                <span>Pastel:</span>
+                <br>
+                <label><input type="checkbox" id="sabor1" value="chocolate"> Chocolate</label>
+                <br>
+                <input type="checkbox" id="sabor2" value="vainilla"><label>Vainilla</label>
+                <br>
+                <input type="checkbox" id="sabor3" value="fresa"><label>Fresa</label>
+                <br>
+                <br>
+                <span>Adornos:</span>
+                <br>
+                <label><input type="checkbox" id="adorno1" value="cumple">Cumpleaños</label>
+                <br>
+                <input type="checkbox" id="adorno2" value="aniversario"><label>Aniversario</label>
+                <br>
+                <input type="checkbox" id="adorno3" value="graduacion"><label>Graduación</label>
+                <br>
+                
+                <button class="button-add">Ordenar</button>
+            </form>
+        </div>
+        
 
     </main>
     <footer>
+        <div class="contact-container">
+            <div class="contact-left">
+            <h2 id="ordenar">Contacto</h2>
+            <p>Dirección: Lorem ipsum dolor sit amet.</p>
+            <p>Teléfono: 8394029834</p>
+            </div>
+            <div class="contact-right">
+                <p>Horario</p>
+                <p>Lunes-jueves: 9am - 8pm</p>
+                <p>Viernes-sábado: 10am - 7pm</p>
+                <p>Domingo: Cerrado</p>
+            </div>
 
+        </div>
     </footer>
 </body>
 </html>
